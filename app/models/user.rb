@@ -9,4 +9,14 @@ class User < ApplicationRecord
   validates :encrypted_password, presence: true
 
   has_one :profile, dependent: :destroy
+  has_many :posts, dependent: :destroy
+
+
+  def avatar_image
+    if profile&.avatar&.attached?
+      profile.avatar
+    else
+      'default.jpeg'
+    end
+  end
 end

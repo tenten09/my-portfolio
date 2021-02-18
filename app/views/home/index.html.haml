@@ -1,2 +1,5 @@
 %h1 railsHome!!
 = javascript_pack_tag 'hello_vue'
+= link_to 'プロフィール', profile_path(current_user)
+= button_to 'Exit', destroy_user_session_path, method: :delete
+
