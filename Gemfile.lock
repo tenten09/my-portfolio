@@ -89,6 +89,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise_token_auth (1.1.5)
+      bcrypt (~> 3.0)
+      devise (> 3.5.2, < 5)
+      rails (>= 4.2.0, < 6.2)
     erb2haml (0.1.5)
       html2haml
     erubi (1.10.0)
@@ -252,6 +256,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
+  devise_token_auth
   erb2haml
   faker
   hamlit

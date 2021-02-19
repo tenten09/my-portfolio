@@ -28,6 +28,7 @@ gem 'annotate'
 gem 'better_errors'
 gem 'faker'
 gem 'devise'
+gem 'devise_token_auth'
 gem 'hamlit'
 
 # Reduces boot times through caching; required in config/boot.rb
