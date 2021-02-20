@@ -1,1 +1,0 @@
-json.array! @posts, :title, :content, :user_id, :id
